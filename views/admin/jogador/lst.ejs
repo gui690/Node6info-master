@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogadores</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Jogadores</h1>
+        <div class="add-jogador">
+            <a href="/admin/jogador/add">+ Jogador</a>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Jogador</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Posição</th>
+                    <th>Opções</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arthur</td>
+                    <td>1.90 Cm</td>
+                    <td>86 KG</td>
+                    <td>
+                        <select id="posicao" name="posicao">
+                            <option value="zagueiro">zagueiro</option>
+                            <option value="pivo">pivo</option>
+                            <option value="ala">altura</option>
+                        </select></td>
+                    <td class="action-buttons">
+                        <a href="/admin/jogador/edt/1" class="edit-btn">Editar</a>
+                        <a href="/admin/jogador/del/1" class="delete-btn"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lucas</td>
+                    <td>1.80 Cm</td>
+                    <td>100 KG</td>
+                    <td>
+                        <select id="posicao" name="posicao">
+                            <option value="zagueiro">zagueiro</option>
+                            <option value="pivo">pivo</option>
+                            <option value="ala">altura</option>
+                        </select></td>
+                    <td class="action-buttons">
+                        <a href="/admin/jogador/edt/2" class="edit-btn">Editar</a>
+                        <a href="/admin/jogador/del/2" class="delete-btn"><i class="fa-solid fa-trash"></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
