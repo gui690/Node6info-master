@@ -22,25 +22,22 @@
                 <tr>
                     <th>Time</th>
                     <th>Estádio</th>
-                    <th>Opções</th>
+                    
                 </tr>
             </thead>
             <tbody>
+                <%Times.forEach(function(time){%>
                 <tr>
-                    <td>Brasil-PE</td>
-                    <td>Estádio Ilha do Retiro</td>
+                    <td><%=time.nome=%></td>
+                    <td><%=time.estadio=%></td>
+                   
                     <td class="action-buttons">
                         <a href="/admin/time/edt/1" class="edit-btn">Editar</a>
                         <a href="/admin/time/del/1" class="delete-btn"><i class="fa-solid fa-trash"></a>
                     </td>
                 </tr>
-                <tr>
-                    <td>Brasil-PA</td>
-                    <td>Estádio Mangueirão</td>
-                    <td class="action-buttons">
-                        <a href="/admin/time/edt/2" class="edit-btn">Editar</a>
-                        <a href="/admin/time/del/2" class="delete-btn"><i class="fa-solid fa-trash"></a>
-                    </td>
+                <%})%>
+             
                 </tr>
             </tbody>
         </table>
